@@ -1,17 +1,18 @@
 @import '../utils/variables.scss';
 
 .nav {
-    width: 100%;
-    height: 100px;
+    width: 100vw;
+    height: 80px;
     position: relative;
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     background-color: white;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    
+    
+    padding-right: 20px;
+    z-index: 1000;
+    
 
 
 
@@ -21,14 +22,15 @@
 
         img {
             width: 30px;
-            margin-left: 80px;
-            margin-top: 20px;
+            margin-left: 60px;
+            margin-top: 10px;
         }
     }
 
 
     .logo-anchor {
         width: 290px;
+       
 
         &>.logo {
             width: 290px;
@@ -57,10 +59,11 @@
         list-style: none;
         display: none;
         background-color: $magenta;
-        width: 100%;
+        width: 100vw;
+        z-index: 1000;
 
         &>li {
-            margin: 30px 50px 30px 30px;
+            margin: 2px 15px;
 
             &:hover {
                 background-color: $magenta;
@@ -91,13 +94,12 @@
 @media only screen and (min-width: 720px) {
     .nav {
         width: 100%;
-        height: 100px;
+        height: 85px;
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: white;
-        padding-top: 15px;
         padding-left: 15px;
         padding-right: 15px;
 
@@ -106,8 +108,7 @@
             text-align: left;
 
             img {
-
-                width: 30px;
+                width: 40px;
                 margin-left: 80px;
             }
         }
@@ -143,9 +144,10 @@
             display: none;
             background-color: $magenta;
             width: 100%;
+            padding-top: 10px;
 
             &>li {
-                margin: 30px 50px 30px 30px;
+                margin: 10px;
 
                 &:hover {
                     background-color: $magenta;
@@ -178,12 +180,11 @@
 @media only screen and (min-width: 1200px) {
 
     .nav {
-        height: auto;
+        height: 90px;
         width: 100%;
         position: relative;
         background-color: white;
-
-        gap: 10px;
+        margin:0px;
 
 
 
@@ -198,12 +199,12 @@
             justify-content: right;
             align-items: right;
             background-color: white;
+            
 
 
             &>li {
                 font-size: 8px;
                 margin-left: 100px;
-
                 color: black;
 
 
@@ -221,11 +222,9 @@
                 }
 
                 &>a {
-
                     color: black;
-
                     background-color: white;
-                    font-size: xx-large;
+                    font-size: x-large;
                 }
             }
         }
